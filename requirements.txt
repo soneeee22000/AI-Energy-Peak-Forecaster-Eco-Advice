@@ -1,10 +1,9 @@
 streamlit
 pandas
-numpy
+numpy==1.26.4
 plotly
 prophet==1.1.5
 cmdstanpy
 scikit-learn
 lightgbm
 requests
-python-dotenv
