@@ -208,7 +208,7 @@ def lgbm_backtest_and_future(train_series: pd.Series, test_series: pd.Series, ho
     X_test  = feat_test.drop(columns=["y"]);  y_test  = feat_test["y"]
 
     model = LGBMRegressor(
-        n_estimators=800, learning_rate=0.03,
+        n_estimators=300, learning_rate=0.05,
         max_depth=-1, num_leaves=64,
         subsample=0.8, colsample_bytree=0.8,
         random_state=42, n_jobs=-1,
